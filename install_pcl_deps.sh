@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get install -y libflann-dev libvtk5-dev libboost-all-dev libusb-1.0-0-dev libqhull-dev libpcap0.8-dev
 
 # Install metslib 0.5.3
-wget http://www.coin-or.org/download/source/metslib/metslib-0.5.3.tgz
+wget http://www.coin-or.org/download/source/metslib/metslib-0.5.3.tgz --no-check-certificate
 tar zxvf metslib-0.5.3.tgz
 cd metslib-0.5.3/
 ./configure
@@ -17,9 +17,9 @@ cd ..
 rm -rf metslib-0.5.3*
 
 # Install eigen 3.1.4
-hg clone https://bitbucket.org/eigen/eigen/
+git clone https://gitlab.com/libeigen/eigen.git
 cd eigen
-hg up 3.1.4
+git checkout 3.1.4
 mkdir builddir
 cd builddir
 cmake ../
