@@ -4,7 +4,7 @@
 
 # Install ubuntu packages
 sudo apt-get update
-sudo apt-get install libflann-dev libvtk5-dev libboost-all-dev libusb-1.0-0-dev libqhull-dev libpcap0.8-dev
+sudo apt-get install -y libflann-dev libvtk5-dev libboost-all-dev libusb-1.0-0-dev libqhull-dev libpcap0.8-dev
 
 # Install metslib 0.5.3
 wget http://www.coin-or.org/download/source/metslib/metslib-0.5.3.tgz
